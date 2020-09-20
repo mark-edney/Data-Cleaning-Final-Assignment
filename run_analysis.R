@@ -6,10 +6,8 @@
 
 #Loads all the data files and labels into system
 library(dplyr)
-train_subject<-read.table("UCI HAR Dataset\\train\\subject_train.txt")
 train_x<-read.table("UCI HAR Dataset\\train\\X_train.txt")
 train_y<-read.table("UCI HAR Dataset\\train\\Y_train.txt")
-test_subject<-read.table("UCI HAR Dataset\\test\\subject_test.txt")
 test_x<-read.table("UCI HAR Dataset\\test\\x_test.txt")
 test_y<-read.table("UCI HAR Dataset\\test\\y_test.txt")
 subject_train<-read.table("UCI HAR Dataset\\train\\subject_train.txt")
