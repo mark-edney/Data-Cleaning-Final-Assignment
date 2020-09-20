@@ -5,9 +5,6 @@ date: "19/09/2020"
 output: pdf_document
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
 
 ## R Code
 The run_analysis code follows this procedure:
