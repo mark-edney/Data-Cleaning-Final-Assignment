@@ -10,6 +10,9 @@ output: pdf_document
 The run_analysis code follows this procedure:
 
 1. Load the dplyr packages
+```{r}
+library(dplyr)
+```
 2. Load the different datafiles into the system as dataframes
 3. Merge the train and test dataframes together
 4. Load the featurelist and activity labels into the system as dataframes
@@ -23,17 +26,4 @@ the activity to the describition with the activity label df
 11. Summarise the second df with the summarise_all by mean
 
 
-## Code book
 
-train_x- data from the training group\
-train_y- activity data for the training group\
-test_x- data from the test group\
-test_y- activity data for the test group\
-subject_train- subject data for the training group\
-subject_test- subject data for the test group\
-datamerge- the mergered data frame\
-featurelist- labels for the feature data\
-activitylabel- labels for the activity data\
-activity- merged activity data\
-sortfeatures- logical vector for sorting df by std and mean \
-datasecond- second dataframe grouped by activty and subject and summarised
