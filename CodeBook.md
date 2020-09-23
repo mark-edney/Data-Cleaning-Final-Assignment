@@ -5,10 +5,6 @@ date: "23/09/2020"
 output: pdf_document
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
-
 ## Data cleaning assignment
 
 This is the codebook for the final assignment in the data cleaning course. 
