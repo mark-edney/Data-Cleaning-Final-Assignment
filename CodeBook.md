@@ -34,10 +34,10 @@ Y_test.txt- The raw data describing the activities of the test group\
 subject_train.txt- The raw data for the subject ID in the training group\
 subject_test.txt- The raw data for the subject ID in the test group\
 features.txt- The labels of the features for the recorded data\
-activity_labels.txt- The labels for the activities\
+activity_labels.txt- The labels for the activities
 
 ## Transformations
-The raw data transformation follows the following procedure:\
+The raw data transformation follows the following procedure:
 1. Load the dplyr packages
 ```{r}
 library(dplyr)
@@ -98,7 +98,7 @@ data2<-mutate(data2,"subject"=rbind(subject_train,subject_test))
 datasecond<-group_by(data2,activity, subject)
 ```
 
-11. Summarize the second df with the summarize_all by mean
+11. Summarize the second df with the summarize_at by mean
 ```{r}
 datasecond<-summarise_at(datasecond,c(1:86),mean,na.rm = TRUE)
 ```

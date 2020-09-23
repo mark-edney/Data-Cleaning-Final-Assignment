@@ -70,7 +70,7 @@ data2<-mutate(data2,"subject"=rbind(subject_train,subject_test))
 datasecond<-group_by(data2,activity, subject)
 ```
 
-11. Summarize the second df with the summarize_all by mean
+11. Summarize the second df with the summarize_at by mean
 ```{r}
 datasecond<-summarise_at(datasecond,c(1:86),mean,na.rm = TRUE)
 ```
